@@ -10,5 +10,18 @@ package pkg2d_shapes;
  * @author Welcome Joyce!!!
  */
 public class Shape {
-    
+    public double getArea() {
+        //shape unknown, cannot compute area, will be overriden in subclasses
+        System.out.println("Shape unknown. Cannot calculate the area.");
+        return 0;  
+    }
+    public double getPerimeter() {
+         //shape unknown, cannot compute perimeter, will be overriden in subclasses
+        System.out.println("Shape unknown. Cannot calculate the perimeter.");
+        return 0;
+    }
+    @Override
+    public String toString() {
+        return "Shape of ";
+    }
 }

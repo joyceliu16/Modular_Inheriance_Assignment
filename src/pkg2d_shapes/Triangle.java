@@ -9,7 +9,7 @@ package pkg2d_shapes;
  *
  * @author Welcome Joyce!!!
  */
-public class Triangle {
+public class Triangle extends Shape {
     //define instance variables
     private double side1;
     private double side2;
@@ -28,17 +28,20 @@ public class Triangle {
         this.side3 = side3;
     }
     //method to calculate perimeter
+    @Override
     public double getPerimeter(){
         return side1 + side2 +side3; 
     }
     //method to calculate area
+    @Override
     public double getArea() {
         double p = this.getPerimeter()/2;
         //Double p equals (side1 + side2 + side3)/2.
         return Math.sqrt(p*(p-side1)*(p-side2)*(p-side3));    
     }
+    @Override
     public String toString() {
-        return "Triangle[side1=" + side1 +", side2=" + side2 +", side3=" + side3 + "]";
+        return super.toString()+"Triangle[side1=" + side1 +", side2=" + side2 +", side3=" + side3 + "]";
     }
     
 }

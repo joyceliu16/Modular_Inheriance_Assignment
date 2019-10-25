@@ -9,7 +9,7 @@ package pkg2d_shapes;
  *
  * @author Welcome Joyce!!!
  */
-public class Rectangle {
+public class Rectangle extends Shape {
     //declare instance variables
     private double length; 
     private double width;
@@ -25,14 +25,17 @@ public class Rectangle {
         this.width = width;
     }
     //method to calculate area of rectangle
+    @Override
     public double getArea() {
         return length*width;
     }
     //method to calculate perimeter of rectangle
+    @Override
     public double getPerimeter() {
         return (2*length)+(2*width);
     }
+    @Override
     public String toString() {
-        return "Rectangle[length="+length +", width="+ width + "]";
+        return super.toString()+"Rectangle[length="+length +", width="+ width + "]";
     }
 }

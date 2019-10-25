@@ -9,7 +9,7 @@ package pkg2d_shapes;
  *
  * @author Welcome Joyce!!!
  */
-public class Circle {
+public class Circle extends Shape{
     //declare instance variables
     private double radius;
     
@@ -18,16 +18,19 @@ public class Circle {
       this.radius = radius;  
     }
     //method to calculate area
+    @Override
     public double getArea(){
         return Math.PI*radius*radius;
     }
     //method to calculate perimeter
+    @Override
     public double getPerimeter() {
         return 2*Math.PI*radius;
     }
     //method to describe the instance
+    @Override
     public String toString() {
-        return "Circle[radius=" +radius+ "]";
+        return super.toString()+"Circle[radius=" +radius+ "]";
         
     }
     

@@ -11,11 +11,26 @@ package pkg2d_shapes;
  */
 public class Main {
 
-    /**
-     * @param args the command line arguments
-     */
+   
     public static void main(String[] args) {
-        // TODO code application logic here
+        Triangle shape1 = new Triangle(6, 8, 10);
+        Rectangle shape2 = new Rectangle(3, 4);
+        Circle shape3 = new Circle (3);
+        
+        System.out.println(shape1.toString());
+        System.out.println("The area is " + shape1.getArea());
+        System.out.println("The perimeter is " + shape1.getPerimeter());
+        System.out.println();
+        
+        System.out.println(shape2.toString());
+        System.out.println("The area is " + shape2.getArea());
+        System.out.println("The perimeter is " + shape2.getPerimeter());
+        System.out.println();
+        
+        System.out.println(shape3.toString());
+        System.out.println("The area is " + shape3.getArea());
+        System.out.println("The perimeter is " + shape3.getPerimeter());
+           
     }
     
 }
