@@ -5,10 +5,8 @@
  */
 package pkg2d_shapes;
 
-/**
- *
- * @author Welcome Joyce!!!
- */
+import java.util.Scanner;
+
 public class Shape {
     public double getArea() {
         //shape unknown, cannot compute area, will be overriden in subclasses
@@ -24,4 +22,9 @@ public class Shape {
     public String toString() {
         return "Shape of ";
     }
+    
+    public void userInput() {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Please input shape parameters.");
+     }
 }

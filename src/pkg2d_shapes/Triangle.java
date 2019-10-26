@@ -5,6 +5,8 @@
  */
 package pkg2d_shapes;
 
+import java.util.Scanner;
+
 /**
  *
  * @author Welcome Joyce!!!
@@ -16,10 +18,13 @@ public class Triangle extends Shape {
     private double side3;
     
     //constructor
-    public Triangle() {
+   /* public Triangle() {
         side1 = 3;
         side2 = 4;
         side3 = 5;
+    }*/
+    public Triangle() {
+        this.userInput();
     }
     //overloading constructor
     public Triangle(double side1, double side2, double side3) {
@@ -43,5 +48,15 @@ public class Triangle extends Shape {
     public String toString() {
         return super.toString()+"Triangle[side1=" + side1 +", side2=" + side2 +", side3=" + side3 + "]";
     }
+     @Override
+    public void userInput() {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Please enter the first side length of the triangle.");
+        side1 = input.nextDouble();
+        System.out.println("Please enter the second side length of the triangle.");
+        side2 = input.nextDouble();
+        System.out.println("Please enter the third side length of the triangle.");
+        side3 = input.nextDouble();
+      }
     
 }

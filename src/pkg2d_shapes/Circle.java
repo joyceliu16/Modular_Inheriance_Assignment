@@ -5,6 +5,8 @@
  */
 package pkg2d_shapes;
 
+import java.util.Scanner;
+
 /**
  *
  * @author Welcome Joyce!!!
@@ -16,6 +18,9 @@ public class Circle extends Shape{
     //constructor
     public Circle(double radius) {
       this.radius = radius;  
+    }
+    public Circle() {
+        this.userInput();
     }
     //method to calculate area
     @Override
@@ -33,7 +38,12 @@ public class Circle extends Shape{
         return super.toString()+"Circle[radius=" +radius+ "]";
         
     }
-    
+     @Override
+    public void userInput() {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Please enter the radius of the circle.");
+        radius = input.nextDouble();    
+      }   
 }
 
 
