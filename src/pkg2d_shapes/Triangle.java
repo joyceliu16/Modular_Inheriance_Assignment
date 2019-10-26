@@ -12,6 +12,7 @@ import java.util.Scanner;
  * @author Welcome Joyce!!!
  */
 public class Triangle extends Shape {
+    
     //define instance variables
     private double side1;
     private double side2;
@@ -23,9 +24,11 @@ public class Triangle extends Shape {
         side2 = 4;
         side3 = 5;
     }*/
+    
     public Triangle() {
         this.userInput();
     }
+    
     //overloading constructor
     public Triangle(double side1, double side2, double side3) {
         this.side1 = side1;
@@ -37,6 +40,7 @@ public class Triangle extends Shape {
     public double getPerimeter(){
         return side1 + side2 +side3; 
     }
+    
     //method to calculate area
     @Override
     public double getArea() {
@@ -44,12 +48,16 @@ public class Triangle extends Shape {
         //Double p equals (side1 + side2 + side3)/2.
         return Math.sqrt(p*(p-side1)*(p-side2)*(p-side3));    
     }
+    
+    //method to describe the instance
     @Override
     public String toString() {
         return super.toString()+"Triangle[side1=" + side1 +", side2=" + side2 +", side3=" + side3 + "]";
     }
+    
+    // user input method
      @Override
-    public void userInput() {
+     public void userInput() {
         Scanner input = new Scanner(System.in);
         System.out.println("Please enter the first side length of the triangle.");
         this.side1 = getValue();

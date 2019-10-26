@@ -1,10 +1,16 @@
 
+/**
+ *
+ * @author Welcome Joyce!!!
+ */
+
 package pkg2d_shapes;
 
 public class Main {
 
-   
-    public static void main(String[] args) {
+       public static void main(String[] args) {
+        
+        //construct instances   
         /*Triangle shape1 = new Triangle(6, 8, 10);
         Rectangle shape2 = new Rectangle(3, 4);
         Circle shape3 = new Circle (3);*/

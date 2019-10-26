@@ -5,6 +5,11 @@
  */
 package pkg2d_shapes;
 
+/**
+ *
+ * @author Welcome Joyce!!!
+ */
+
 import java.util.Scanner;
 
 public class Rectangle extends Shape {
@@ -17,29 +22,36 @@ public class Rectangle extends Shape {
         length = 1;
         width = 1;
     }*/
+    
+    public Rectangle() {
+        this.userInput();
+    }
+
     //overloaded constructor
     public Rectangle(double length, double width) {
         this.length = length;
         this.width = width;
     }
     
-    public Rectangle() {
-        this.userInput();
-    }
-    //method to calculate area of rectangle
+        //method to calculate area of rectangle
     @Override
     public double getArea() {
         return length*width;
     }
+    
     //method to calculate perimeter of rectangle
     @Override
     public double getPerimeter() {
         return (2*length)+(2*width);
     }
+    
+    //method to describe the instance
     @Override
     public String toString() {
         return super.toString()+"Rectangle[length="+length +", width="+ width + "]";
     }
+    
+    //user input method
     @Override
     public void userInput() {
         Scanner input = new Scanner(System.in);
