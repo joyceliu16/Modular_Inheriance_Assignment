@@ -44,8 +44,8 @@ public class Rectangle extends Shape {
     public void userInput() {
         Scanner input = new Scanner(System.in);
         System.out.println("Please enter the length of the rectangle.");
-        length = input.nextDouble();
+        this.length = getValue();
         System.out.println("Please enter the width of the rectangle.");
-        width = input.nextDouble();
+        this.width = getValue();
       }
 }

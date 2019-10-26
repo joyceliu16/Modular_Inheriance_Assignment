@@ -6,6 +6,8 @@
 package pkg2d_shapes;
 
 import java.util.Scanner;
+import java.util.InputMismatchException;
+
 
 public class Shape {
     public double getArea() {
@@ -27,4 +29,24 @@ public class Shape {
         Scanner input = new Scanner(System.in);
         System.out.println("Please input shape parameters.");
      }
-}
+    public double getValue() {
+        
+        Scanner input = new Scanner(System.in);
+        double val;
+        while(true) {
+            try {
+            val = input.nextDouble();
+            break;
+            }
+        catch (InputMismatchException err) {
+            System.out.println("Please enter a positive number.");
+            input.next();
+            }
+        }
+        
+        return val;
+    }
+            
+        }
+        
+

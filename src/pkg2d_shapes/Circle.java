@@ -42,7 +42,7 @@ public class Circle extends Shape{
     public void userInput() {
         Scanner input = new Scanner(System.in);
         System.out.println("Please enter the radius of the circle.");
-        radius = input.nextDouble();    
+        this.radius = getValue();    
       }   
 }
 

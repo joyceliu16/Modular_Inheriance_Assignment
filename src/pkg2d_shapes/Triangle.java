@@ -52,11 +52,11 @@ public class Triangle extends Shape {
     public void userInput() {
         Scanner input = new Scanner(System.in);
         System.out.println("Please enter the first side length of the triangle.");
-        side1 = input.nextDouble();
+        this.side1 = getValue();
         System.out.println("Please enter the second side length of the triangle.");
-        side2 = input.nextDouble();
+        this.side2 = getValue();
         System.out.println("Please enter the third side length of the triangle.");
-        side3 = input.nextDouble();
+        this.side3 = getValue();
       }
     
 }
