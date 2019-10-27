@@ -55,13 +55,7 @@ public class Shape {
         
         return val;
     }
-       
-    public void displayResult() {
-        System.out.println(this.toString());
-        System.out.println("The area is " + this.getArea());
-        System.out.println("The perimeter is " + this.getPerimeter());
-        System.out.println();
-    }
+            
         }
         
 

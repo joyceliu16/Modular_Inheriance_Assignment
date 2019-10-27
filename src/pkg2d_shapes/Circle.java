@@ -12,7 +12,6 @@ import java.util.Scanner;
  *
  * @author Welcome Joyce!!!
  */
-
 public class Circle extends Shape {
     //declare instance variables
     private double radius;
@@ -52,8 +51,7 @@ public class Circle extends Shape {
         Scanner input = new Scanner(System.in);
         System.out.println("Please enter the radius of the circle:");
         this.radius = getValue();    
-      }  
-    
+      }   
 }
 
 
