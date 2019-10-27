@@ -1,17 +1,12 @@
 
 /**
- *
- * @author Welcome Joyce!!!
+ * @author Joyce
  */
 
 package pkg2d_shapes;
 
 import java.util.Scanner;
 
-/**
- *
- * @author Welcome Joyce!!!
- */
 public class Circle extends Shape {
     //declare instance variables
     private double radius;

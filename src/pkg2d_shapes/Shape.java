@@ -1,10 +1,10 @@
 
-package pkg2d_shapes;
-
 /**
- *
- * @author Welcome Joyce!!!
+ * @author Joyce
  */
+
+
+package pkg2d_shapes;
 
 import java.util.Scanner;
 import java.util.InputMismatchException;
@@ -13,7 +13,8 @@ import java.util.InputMismatchException;
 public class Shape {
     
     /* all subclasses have the following methods:
-    *   getArea(), getPerimeter(), toString(), getValue(), userInput()
+    *   getArea(), getPerimeter(), toString(), getValue(), userInput(),
+    *   and displayResult()
     */
     
     public double getArea() {
@@ -28,16 +29,19 @@ public class Shape {
         return 0;
     }
     
+    // method to describe the instance
     @Override
     public String toString() {
         return "Shape of ";
     }
     
+    // user input method, will be overriden in subclasses
     public void userInput() {
         Scanner input = new Scanner(System.in);
         System.out.println("Please input shape parameters.");
      }
     
+    // method to handle input mismatch exception
     public double getValue() {
         double val;
         Scanner input = new Scanner(System.in);
@@ -55,7 +59,17 @@ public class Shape {
         
         return val;
     }
-            
-        }
+      
+    // method to display results
+    public void displayResult() {
+        System.out.println(this.toString());
+        System.out.println("The area is " + this.getArea());
+        System.out.println("The perimeter is " + this.getPerimeter());
+        System.out.println();
+    }
+
+
+    
+   }
         
 

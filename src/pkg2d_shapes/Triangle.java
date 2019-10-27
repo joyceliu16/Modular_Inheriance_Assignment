@@ -1,7 +1,6 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+
+/**
+ * @author Joyce
  */
 
 
@@ -9,10 +8,6 @@ package pkg2d_shapes;
 
 import java.util.Scanner;
 
-/**
- *
- * @author Welcome Joyce!!!
- */
 public class Triangle extends Shape {
     
     //define instance variables
@@ -61,8 +56,8 @@ public class Triangle extends Shape {
      @Override
      public void userInput() {
         Scanner input = new Scanner(System.in);
-        System.out.println("Please enter the lengths of the three sides of  the triangle");
-        System.out.println("The sum of lengths of any two sides must be bigger than the third side.");
+        System.out.println("Please enter the lengths of the three sides of the triangle");
+        System.out.println("The sum of the lengths of any two sides must be bigger than the third side.");
         System.out.println();
         
         while (true) {
