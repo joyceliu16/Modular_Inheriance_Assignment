@@ -55,16 +55,31 @@ public class Triangle extends Shape {
         return super.toString()+"Triangle[side1=" + side1 +", side2=" + side2 +", side3=" + side3 + "]";
     }
     
-    // user input method
+    // user input method with Triangle Inequality Theorem
      @Override
      public void userInput() {
         Scanner input = new Scanner(System.in);
-        System.out.println("Please enter the first side length of the triangle.");
+        System.out.println("Please enter the lengths of the three sides of  the triangle");
+        System.out.println("The sum of lengths of any two sides must be bigger than the third side.");
+        System.out.println();
+        
+        while (true) {
+              
+        System.out.println("Please enter the first side length of the triangle:");
         this.side1 = getValue();
-        System.out.println("Please enter the second side length of the triangle.");
+        System.out.println("Please enter the second side length of the triangle:");
         this.side2 = getValue();
-        System.out.println("Please enter the third side length of the triangle.");
+        System.out.println("Please enter the third side length of the triangle:");
         this.side3 = getValue();
-      }
+        
+        if (side1 + side2 > side3 && side1 + side3 > side2 && side2 + side3 > side1) {
+            break;
+            } 
+        else {
+            System.out.println("The sum of the lengths of any two sides must be bigger than the third side. Please try again.");           
+            }
+        }
+        
+    }
     
 }

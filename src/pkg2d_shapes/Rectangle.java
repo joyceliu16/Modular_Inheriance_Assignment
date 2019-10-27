@@ -55,9 +55,9 @@ public class Rectangle extends Shape {
     @Override
     public void userInput() {
         Scanner input = new Scanner(System.in);
-        System.out.println("Please enter the length of the rectangle.");
+        System.out.println("Please enter the length of the rectangle:");
         this.length = getValue();
-        System.out.println("Please enter the width of the rectangle.");
+        System.out.println("Please enter the width of the rectangle:");
         this.width = getValue();
       }
 }

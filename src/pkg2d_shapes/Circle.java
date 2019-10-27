@@ -54,7 +54,7 @@ public class Circle extends Shape {
     @Override
     public void userInput() {
         Scanner input = new Scanner(System.in);
-        System.out.println("Please enter the radius of the circle.");
+        System.out.println("Please enter the radius of the circle:");
         this.radius = getValue();    
       }   
 }
