@@ -16,21 +16,13 @@ public class Main {
         Circle shape3 = new Circle (3);*/
         
         Triangle shape1 = new Triangle(); 
-        System.out.println(shape1.toString());
-        System.out.println("The area is " + shape1.getArea());
-        System.out.println("The perimeter is " + shape1.getPerimeter());
-        System.out.println();
+        shape1.displayResult();
         
         Rectangle shape2 = new Rectangle();
-        System.out.println(shape2.toString());
-        System.out.println("The area is " + shape2.getArea());
-        System.out.println("The perimeter is " + shape2.getPerimeter());
-        System.out.println();
+        shape2.displayResult();
         
         Circle shape3 = new Circle();
-        System.out.println(shape3.toString());
-        System.out.println("The area is " + shape3.getArea());
-        System.out.println("The perimeter is " + shape3.getPerimeter());
+        shape3.displayResult();
            
     }
  
